@@ -1,0 +1,17 @@
+### First Call to Kick Off Orchestrator
+GET http://localhost:7071/api/orchestrators/DurableFunctionsOrchestratorJS
+
+### Get status
+GET http://localhost:7071/runtime/webhooks/durabletask/instances/978509047eb04ab7a136acc22cc93264?taskHub=TestHubName&connection=Storage&code=arLi023adnQMqRG4JuXzokXi9idLOTZ/X6jVLX8x6gRY7yvp7PfN8Q=="
+
+
+###Kick off with input data
+POST http://localhost:7071/api/orchestrators/DurableFunctionsOrchestratorJS HTTP/1.1
+content-type: application/json
+
+{
+    "id": "12345"
+}
+
+###
+GET http://localhost:7071/runtime/webhooks/durabletask/instances/90f4b37f5dba42529bff63c4bfb29aa4?taskHub=TestHubName&connection=Storage&code=arLi023adnQMqRG4JuXzokXi9idLOTZ/X6jVLX8x6gRY7yvp7PfN8Q==
