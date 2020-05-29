@@ -13,7 +13,7 @@
     "durable-functions": "^1.4.1"
   },
   "devDependencies": {
-    "@azure/functions": "^1.2.0",
+    "@azure/functions": "^1.2.2",
     "typescript": "^3.9.3"
   }
 }
